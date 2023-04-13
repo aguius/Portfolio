@@ -1,0 +1,155 @@
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Acme', sans-serif;
+  font-family: 'Sarabun', sans-serif;
+}
+
+body{background-image: url(./img/background2.jpg);
+  background-size:cover;}
+
+header{
+  background-color: rgba(245, 243, 193, 0.158);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;  
+  height: fit-content;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  height: 8%;
+}
+
+header h1{font-size: 4em;
+  top: -5px;
+    position: absolute;
+}
+
+header ul, a{
+  text-decoration: none;
+  color: white;
+}
+
+header ul li{
+  font-size: 2rem;
+  display: inline-block;
+  padding: 10px;
+}
+
+header ul{
+  margin-right: 8px;
+  text-align: end;
+  vertical-align: baseline;
+  position: relative;
+  
+}
+
+
+main{ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.card{
+  height: 400px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(245, 243, 193,0.95);
+  border: 1px groove;
+  font-size: 1.9em;
+  font-family: sarabun;
+  border-radius: 5px;
+  position: fixed;
+}
+
+.card-content{
+  padding: 20px;
+}
+
+.card-content p{
+  margin-top: 20px;
+    margin-bottom: -15px;
+    font-size: 0.8em;
+}
+
+.card-button{
+  padding: 50px;
+  width: 100%;
+}
+
+.card button{
+  margin-top: 10px;
+  height: 50px;
+  width: 100%;
+  background-color: #F49D1A;
+  border-color: #503308;
+  border: 1px solid;
+  border-radius: 3px;
+
+}
+
+.card button:hover{
+  background-color:  #b17316 ;
+  
+}
+
+.card-button button:active{
+  background-color:  #b17316;
+  transform: scale(0.94);
+}
+
+footer{color: rgb(73, 72, 72);
+  font-size: 3em;
+  height: 40px;
+}
+
+
+header li:hover{background-color:rgba(245, 243, 193, 0.473) ;}
+
+header li:active{background-color:rgba(245, 243, 193, 0.473) ;
+  transform: scale(0.9);
+}
+
